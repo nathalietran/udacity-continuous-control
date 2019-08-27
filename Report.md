@@ -15,6 +15,13 @@ In order to solve the environment, the agents must get an average score of +30 o
 
 
 # Plot of Rewards
+The environment has been solve in around 38 episodes ! Below is the plot of the agent's rewards.
 
+```
+Episode 100	Average Score: 17.63
+Episode 138	Average Score: 30.15
+Environment solved in 38 episodes!	Average Score: 30.15
+```
+![](figures/ddpg_scores.png)
 
 # Ideas for future works
