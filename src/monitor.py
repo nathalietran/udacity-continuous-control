@@ -3,7 +3,7 @@ import torch
 import numpy as np
 
 def run_agent(env, agent, n_episodes=1000, max_t=1000, print_every=100):
-        """Run the agent inside an environment.
+    """Run the agent inside an environment.
 
     Params
     ======
@@ -50,7 +50,7 @@ def run_agent(env, agent, n_episodes=1000, max_t=1000, print_every=100):
 
 def test_agent(env, agent, max_t=1000):
     """Test the trained agent
-    
+
     Params
     ======
         max_t (int): maximum number of timesteps per episode
