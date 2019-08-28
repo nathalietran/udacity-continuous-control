@@ -13,7 +13,7 @@ We implement a policy-based method called **Deep Deterministic Policy Gradients*
 
 In the original [paper](https://arxiv.org/pdf/1509.02971.pdf) of Google Deepmind, DDPG comes as a result of tailoring _the ideas underlying the success of Deep Q-Learning to the continuous action domain_.
 
-As a base, I used [this implementation](https://github.com/udacity/deep-reinforcement-learning/tree/master/ddpg-pendulum) of a single-agent DDPG by Udacity and adapt it to a multiple-agent DDPG.
+As a base, I used [this implementation](https://github.com/udacity/deep-reinforcement-learning/tree/master/ddpg-pendulum) of a single-agent DDPG by Udacity and adapt it to a multi-agent DDPG.
 
 Just like in the first project, target and local networks are used to stabilize the training process by decoupling the selection and evaluation of an action.
 
@@ -34,7 +34,7 @@ In order to further stabilize the training process, we apply replay buffer which
 
 # Architecture
 
-The model architecture consists of a Actor and Critic neural network, each of two layers network with 256 and 128 hidden units and input state size of 33 dimensions and output actions size of 4. All these layers are separated by Rectifier Linear Units (ReLu). The hyperbolic tangent (tanh) is applied before the output of the actor network to ensure that values are between -1 and 1.
+The model architecture consists of an Actor and Critic neural network, each of two layers network with 256 and 128 hidden units and input state size of 33 dimensions and output actions size of 4. All these layers are separated by Rectifier Linear Units (ReLu). The hyperbolic tangent (tanh) is applied before the output of the actor network to ensure that values are between -1 and 1.
 
 ## Optimization
 The optimization employed to train the
