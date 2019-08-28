@@ -49,7 +49,7 @@ def main(test):
     # create a DDPG agent
     agent = Agent(state_size=state_size,
                   action_size=action_size,
-                  n_agents=num_agents,
+                  n_agents=n_agents,
                   random_seed=1)
     if not test:
         # train the agent
@@ -62,7 +62,7 @@ def main(test):
             torch.load(f'weights/{str(agent)}_checkpoint_actor.pth'))
         agent.critic_local.load_state_dict(
             torch.load(f'weights/{str(agent)}_checkpoint_critic.pth'))
-        test_agent(env, agent)
+        test_agent(env, agent, n_agents)
 
     env.close()
 
