@@ -24,4 +24,7 @@ Environment solved in 38 episodes!	Average Score: 30.15
 ```
 ![](figures/ddpg_scores.png)
 
+We can follow the trained agents for one episode here:
+![](figures/agents.gif)
+
 # Ideas for future works
