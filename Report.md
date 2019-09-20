@@ -34,7 +34,7 @@ In order to further stabilize the training process, we apply replay buffer which
 
 # Architecture
 
-The model architecture consists of an Actor and Critic neural network, each of two layers network with 256 and 128 hidden units and input state size of 33 dimensions and output actions size of 4. All these layers are separated by Rectifier Linear Units (ReLu). The hyperbolic tangent (tanh) is applied before the output of the actor network to ensure that values are between -1 and 1.
+The model architecture consists of an Actor and Critic neural network, each of two layers network with 256 and 128 hidden units and input state size of 33 dimensions and output actions size of 4 for the actor and size of 1 for the critic. All these layers are separated by Rectifier Linear Units (ReLu). The hyperbolic tangent (tanh) is applied before the output of the actor network to ensure that values are between -1 and 1.
 
 ## Optimization
 The optimization employed to train the
